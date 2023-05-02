@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="site">
+            <header id="banner">
+                <h1 class='shop-name'>Jimmy's Diner</h1>
+                <h3 class='shop-desc'>The best burgers and pizzas in town</h3>
+            </header>
+            <section class='menu' id='menu'>
+                
+            </section>
+            <section class='cart'>
+                
+            </section>
+            <section class='final-purchase hidden' id='final-purchase'>
+                <form 
+                    id='purchase-form'
+                    class='final-purchase'
+                    action="">
+                    <div id="close-icon">
+                        <i class="close-pop-up fa-solid fa-circle-xmark" data-close_pop_up="close-pop-up"></i>
+                    </div>
+                    <div id="form-details">
+                        <h3 id='fill-form'>Fill your details to complete purchase!</h3>
+
+                        <input 
+                            id='full-name' 
+                            name='full-name' 
+                            type='text' 
+                            placeholder='Your Name'
+                            required>
+
+                        <input 
+                            id='card-number' 
+                            name='card-number' 
+                            type='text' 
+                            placeholder='Card Number'
+                            required>
+
+                        <input 
+                            id='cvv' 
+                            name='cvv' 
+                            type='text' 
+                            placeholder='CVV'
+                            required>
+
+                        <button id='pay-order'>Pay</button>
+                    </div>
+                </form>
+            </section>
+            <section class='order-completion hidden' id='order-completion'>
+                Thank You!<br>Your order is on it's way!</br>
+            </section>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+    
+</html>
+
