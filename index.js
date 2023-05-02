@@ -20,6 +20,9 @@ document.addEventListener('click', (e) => {
             alert("Please fill all required fields");
         } else {
             document.querySelector(".final-purchase").classList.add('hidden')
+            emptyCart()
+            render()
+            renderCart()
             document.querySelector("#order-completion").classList.remove('hidden');
         }
 
@@ -34,6 +37,12 @@ document.querySelector(".cart").addEventListener("click", (e) => {
         renderCart();
     }
 });
+
+function emptyCart() {
+    menuArray.forEach((menuItem) => {
+        menuItem.numberOrdered = 0;
+    })
+}
 
 function showQuantity(addOrSub, e) {
     const menuItemId = e.target.closest('.quantity').dataset.menuId;
